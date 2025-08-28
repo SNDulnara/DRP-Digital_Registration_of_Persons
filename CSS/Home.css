@@ -1,0 +1,99 @@
+/*Make slides for the slideshow*/
+.slideshow{
+    display:block;
+
+}
+
+.slides{
+    transition: opacity 1.5s ease-in-out;
+    opacity: 0;
+    align-items: center;
+}
+
+.slides.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slide-img{
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+    
+}
+
+
+/*Decorate buttons*/
+.button{
+    height: 11.5vw;
+    width: 20vw;
+    border-color: darkblue;
+    background-color: rgb(200, 200, 200);
+    border-width: 5px;
+    font-size: x-large;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button:hover{
+    background-color: rgb(41, 23, 112);
+    color: white;
+    border-color: rgb(119, 242, 102);
+    transform: scale(1.05);
+}
+
+.bg-picture{
+    position: relative;
+    z-index: 1;
+}
+
+.bg-picture::before{
+    content: "";
+    position: absolute;
+    background-image:url("../Pictures/con\ background.jpg");
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 25%;
+    z-index: -1;
+
+}
+
+
+
+/* ---------- Responsive adjustments ---------- */
+@media (max-width: 1024px) {
+    .slides {
+        height: 300px;
+    }
+    .button {
+        height: 70px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slides {
+        height: 200px;
+    }
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .button {
+        width: 100%;
+        height: 60px;
+        font-size: 0.9rem;
+    }
+}

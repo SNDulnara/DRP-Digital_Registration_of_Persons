@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRP Login</title>
+  <link rel="shortcut icon" href="../Pictures/DRP logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/Login.css">
+  <link rel="stylesheet" href="../CSS/Header and footer.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="bglog">
+  <div class="form-cont">
+    <form method="post" action="../Login.php">
+      <h1>Login</h1>
+      <div class="txtbox">
+        <label for="txt1" class="visually-hidden">Username</label>
+        <input type="text" placeholder="Username" id="txt1" name="txt1" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="txtbox">
+        <label for="psd1" class="visually-hidden">Password</label>
+        <input type="password" placeholder="Password" id="psd1" name="psd1" required>
+        <i class='bx bxs-lock'></i>
+      </div>
+      <div class="remember">
+        <label><input type="checkbox"> Remember Me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit" class="button">Login</button>
+      <div class="registration">
+        <p>Don't have an account? <a href="../HTML/Sign up.html">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+ }
+ 
+ .bglog {
+    position: relative;
+    z-index: 1;
+ }
+ 
+ .bglog::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Pictures//con\ background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+ }
+ 
+ 
+ .btn,
+ .logout-btn{
+    width: 100%;
+    border-radius: 5px;
+    padding:10px 30px;
+    color:white;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+ }
+ 
+ .btn{
+    background: rgba(180, 201, 185, 0.7);
+ }
+ 
+ .btn:hover{
+    background-color: rgba(134, 148, 137, 0.7) ;
+ }
+ 
+ .logout-btn{
+    background-color: orange;
+ }
+ 
+ .logout-btn:hover{
+    background-color: darkorange;
+ }
+ 
+ 
+ 
+ .update{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
+ .update form{
+    padding:20px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    text-align: center;
+    width: 700px;
+    text-align: center;
+    border-radius: 5px;
+ }
+ 
+ .update form .flag{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:15px;
+ }
+ 
+ .update form .flag .inputBox{
+    width: 49%;
+ }
+ 
+ .update form .flag .inputBox span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:white;
+ }
+ 
+ .update form .flag .inputBox .box{
+    width: 100%;
+    border-radius: 5px;
+    background-color: White;
+    opacity: 0.7;
+    z-index: -1;
+    padding:12px 14px;
+    font-size: 17px;
+    color:black;
+    margin-top: 10px;
+ }

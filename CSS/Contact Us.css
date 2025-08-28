@@ -1,0 +1,105 @@
+/*Change the font type of the header 1*/
+.font-type{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Make space between each ane everyone*/
+.contact-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Logo and the words group together and align left*/
+.logo-word{
+    display : flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*To make space between logo and the words*/
+.logo-text{
+    margin-left: 30px;
+}
+
+/*Contact numbers are coloured*/
+.contact-num{
+    color: rgb(5, 5, 199);
+}
+
+/*Set a picture to the background*/
+.contact-us-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-us-bg::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Pictures//con\ background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+/*End of thet part*/
+
+/*Divide the page in to two parts*/
+.con-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.con-container{
+    width: 50%;
+}
+
+.info-container{
+    width: 50%;
+}
+
+/*CSS for text box and email*/
+.form-text-box{
+    width: 300px;
+    height: 40px;
+}
+
+/*CSS for Textarea*/
+.form-textarea{
+    width: 300px;
+    height: 350px;
+}
+
+/*Change background colour of the form*/
+.form-bgcolor{
+    background-color: rgb(4, 4, 86);
+    margin-right: 100px;
+    margin-top: 35px;
+    padding: 30px;
+}
+
+/*CSS for reset and submit buttons*/
+.form-btn{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    
+}
+
+.form-btn:hover{
+    background-color: red;
+    color: white;
+}
+
+/* remove underline of the "back" button */
+.backbutton{
+    text-decoration: none;
+}

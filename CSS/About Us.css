@@ -1,0 +1,29 @@
+.font-size{
+    font-size: larger;
+}
+
+.text-box{
+    display: block;
+    border: 2px solid blue;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.bg-picture{
+    position: relative;
+    z-index: 1;
+}
+
+.bg-picture::before{
+    content: "";
+    position: absolute;
+    background-image:url("../Pictures/con\ background.jpg");
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 20%;
+    z-index: -1;
+}

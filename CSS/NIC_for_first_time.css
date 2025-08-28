@@ -1,0 +1,81 @@
+.header01 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 210%;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 20px;
+}
+
+.thead01{
+    text-align: left;
+}
+
+.table01{
+    font-size: 18px;
+    width: 100%;
+}
+
+.table02{
+    font-size: 18px;
+    text-align: left;
+}
+
+.maindiv{
+    padding-top: 0%;
+    background-color:  rgba(219, 213, 213, 0.384);
+}
+
+.div01_1{
+    font-size: large;
+    color: #fffdfd;
+    background-color: rgb(53, 22, 26);
+    height: 4vh;
+}
+
+.buttondiv{
+    width: 20vw;
+    height: 4vh;
+}
+
+.discription01{
+    font-size: 18px;
+    color: red;
+    padding-left: 15px;
+}
+
+.p1{
+    font-size: 18px;
+}
+
+.formbuttondiv{
+    display: flex;
+    justify-content: right;
+    margin-left: 70vw;
+    margin-top: 5vw;
+}
+
+.formbutton{
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    font-style:initial;
+    background-color: rgb(4, 4, 86);
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 12vw;
+    height: 5vh;
+    color: wheat;
+    cursor: pointer;
+
+}
+
+
+h4{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.text-align{
+    padding-left: 15px;
+    padding-right: 15px;
+}

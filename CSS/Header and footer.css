@@ -1,0 +1,252 @@
+/*body is taking under the heder*/
+body{
+    padding-top: 200px;
+    margin: 0;
+}
+
+/*Begin of header CSS content*/
+header {
+    position: fixed;
+    top: 0;
+    left: 1;
+    width: 100%;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+.header-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;  
+    width: 100%;
+ }
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/*fix the logo size*/
+.logo, .drplogo {
+    width: 80px;
+    height: 100px;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 20px; 
+}
+
+.h1 {
+    margin: 0;
+}
+
+.login-button{
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 25px 15px;
+}
+
+/*Starting the List of links*/
+.ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.nav-container {
+    display: flex;
+    padding-left: 70px;
+}
+
+.nav-list li{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 5px;
+}
+
+.nav-list li a{
+    display:block;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+    background-color: darkgray;
+    transition: background-color 0.3s;
+    
+}
+
+.nav-list li a:hover{
+    color: white;
+    background-color: red;
+}
+
+/*CSS part of the search bar*/
+.serch-input{
+    padding: 5px;
+    height: 10px;
+    border-radius: 50%;
+ 
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: bisque;
+}
+
+.search-button{
+    padding: 5px;
+    margin-left: 5px;
+    background: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.search-button img {
+    width: 15px; 
+    height: 15px;
+}
+/*End of the header CSS*/
+
+/*All the body containers align 70px from the left*/
+.body-content{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/*End of the body CSS*/
+
+/*Footer CSS content*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+
+.footer-color-1{
+    background-color: rgb(8, 8, 57);
+    margin-bottom: 0;
+}
+
+/*Divide footer in to four parts by using flexboxes*/
+.f-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+
+.f-address, .f-contacts{
+    flex: 1;
+}
+/*End of that divition*/
+
+/*Decorate telephone Item*/
+.f-logos{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    
+}
+
+/*Set footer font colour*/
+.f-font-c{
+    color: whitesmoke
+}
+
+.f-pic-font{
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/*Make space between footer list items*/
+.f-space li{
+    padding: 5px;
+}
+
+/*Colour Tel, Fax etc..*/
+.f-span-color{
+    color: yellow;
+}
+
+/*Do changes in titles Addres and Contact*/ 
+.f-title{
+    font-size: large;
+    font-weight: bold;
+}
+
+/*CSS for the map*/
+.map {
+    width: 300px;
+    height: 200px;
+    border: 0;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+/*CSS for image buttons Fb and Youtube*/
+.image-butt {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .image-butt img {
+    width: 30px;
+    height: 30px; 
+    display: block;
+  }
+
+  /*Group FB Youtube and Teliphone together to take them in to a one raw*/
+  .icon-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.icon-item {
+    margin-bottom: 10px; 
+    text-align: center;
+    width: 100%
+}
+
+/*Copyright background colour*/
+.copy-bg{
+    background-color: black;
+    text-align: center;
+    padding-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Bold some text*/
+.copy-font{
+    font-weight: bold;
+}

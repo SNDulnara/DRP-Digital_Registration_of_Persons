@@ -1,0 +1,33 @@
+.dset1
+{
+  display:flex;
+}
+
+.textbox1{
+  width: 500px;
+  height: 25px;
+}
+.textbox2{
+  height: 25px;
+  width: 250px
+}
+.day1{
+  height: 25px;
+}
+.doc{
+  font-weight: bold;
+}
+.line1{
+  margin: 0;
+  height: 2px;
+  background-color: black;
+}
+.txt6{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.sbmit1{
+  margin-left: 60vw;
+  margin-bottom: 20px;
+}

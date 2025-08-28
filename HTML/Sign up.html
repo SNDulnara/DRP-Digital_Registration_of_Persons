@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    <!--Add a title and a logo for the web page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Registration</title>
+    <link rel = "shortcut icon" href = "../Pictures/DRP logo.jpg" type = "image/x-icon">
+    <link rel = "stylesheet" href = "../CSS/Sign up.css">
+   
+</head>
+   
+    <body class="bgcreate">
+        <div class="create">
+          <h1 class="title">Registration</h1>
+          <form method = "post" action = "../Sign_up.php" onsubmit = "return validateForm()">
+            <div class="user-info">
+              <div class="user-input-box">
+                <label for="fullName">Full Name</label>
+                <input type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter Full Name"/>
+              </div>
+              <div class="user-input-box">
+                <label for="username">Username</label>
+                <input type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter Username"/>
+              </div>
+              <div class="user-input-box">
+                <label for="email">Email</label>
+                <input type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Email"/>
+              </div>
+              <div class="user-input-box">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Enter Phone Number"
+                        pattern="[0-9]{10}" title="Phone number must be 10 digits" required>
+              </div>
+              <div class="user-input-box">
+                <label for="password">Password</label>
+                <input type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Password"/>
+              </div>
+              <div class="user-input-box">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm Password"/>
+              </div>
+            </div>
+            <div class="form-submit-btn">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+        <script>
+          function validateForm() {
+              var password = document.getElementById("password").value;
+              var confirmPassword = document.getElementById("confirmPassword").value;
+              var phoneNumber = document.getElementById("phoneNumber").value;
+  
+              if (password !== confirmPassword) {
+                  alert("Passwords do not match");
+                  return false;
+              }
+              
+              var phoneRegex = /^[0-9\- ]+$/;
+              if (!phoneNumber.match(phoneRegex)) {
+                  alert("Phone number must contain only numbers, spaces, or dashes");
+                  return false;
+              }
+  
+              return true;
+          }
+      </script>
+    </body>
+</html>

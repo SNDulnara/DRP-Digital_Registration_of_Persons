@@ -1,0 +1,102 @@
+.formheader{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.header01{
+    font-size: 25px;
+}
+
+.mainform{
+    
+    margin-bottom: 20px;
+}
+
+.form{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.uploaddoc{
+    margin-left: 15px;
+}
+
+.f1{
+    font-size: large;
+}
+
+.fillbox{
+      width: 100%;
+      padding: 10px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    
+}
+
+.subbutton{
+    background-color: rgb(192, 190, 190);
+    color: black;
+    width: 7.5vw;
+    height: 3vw;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.bdate{
+    height: 20px;
+    margin-left: 3%;
+    background-color: rgb(244, 237, 236);
+    border-radius: 4px;
+}
+
+.subbutton:hover{
+    background-color: rgb(17, 17, 80);
+    color: white;
+}
+
+.form-container{
+    display: flex;
+    justify-content: right;
+    margin-right: 15px;
+    
+}
+
+/*Set a picture to the background*/
+.bd {
+    position: relative;
+    z-index: 1;
+}
+
+.bd::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Pictures//con\ background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* give instructions */
+.instructions
+{
+    display: block;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:red;
+    border:2px solid red;
+    background-color: white;
+
+
+}
+
